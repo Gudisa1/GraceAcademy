@@ -22,7 +22,7 @@ const Enroll = () => {
         <div id="enroll-form" className="mt-12 px-4 md:px-20">
           <div className="google-form-embed">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSewBfzm2geWWzxrgtB8yr1Qcxz7mkWe7LCIogqhiCh39DTB1A/viewform?usp=sf_link" // Use the actual embed URL
+              src="https://docs.google.com/forms/d/e/1FAIpQLSc-qK267aXg609bA94FnKy7M_jvhJkqstSCenFk0B3IgHHLxQ/viewform?usp=sf_link" // Use the actual embed URL
               width="100%"
               height="800"
               frameBorder="0"

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Course = () => {
   return (
@@ -24,7 +25,7 @@ const Course = () => {
             data structures, and control flow. Perfect for beginners.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
-            Enroll Now
+            <NavLink to="/enroll">Enroll Now</NavLink>
           </button>
         </div>
 
@@ -44,7 +45,7 @@ const Course = () => {
             websites.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
-            Enroll Now
+            <NavLink to="/enroll">Enroll Now</NavLink>
           </button>
         </div>
 
@@ -66,7 +67,7 @@ const Course = () => {
             React.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
-            Enroll Now
+            <NavLink to="/enroll">Enroll Now</NavLink>
           </button>
         </div>
 
@@ -88,7 +89,7 @@ const Course = () => {
             Python.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
-            Enroll Now
+            <NavLink to="/enroll">Enroll Now</NavLink>
           </button>
         </div>
 
@@ -109,7 +110,7 @@ const Course = () => {
             shell commands, user management, and system configuration.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
-            Enroll Now
+            <NavLink to="/enroll">Enroll Now</NavLink>
           </button>
         </div>
 
@@ -129,7 +130,7 @@ const Course = () => {
             and IT operations.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
-            Enroll Now
+            <NavLink to="/enroll">Enroll Now</NavLink>
           </button>
         </div>
       </div>

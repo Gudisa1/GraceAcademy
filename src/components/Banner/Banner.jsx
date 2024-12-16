@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -15,7 +16,7 @@ const Banner = () => {
             <span className="font-bold text-indigo-500"> GraceAcademy</span>!
           </p>
           <button className="mt-8 rounded-lg px-10 py-4 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white text-lg font-semibold shadow-lg hover:shadow-2xl transform transition-transform hover:-translate-y-1 hover:scale-105">
-            Start Learning
+            <NavLink to="/enroll"> Start Learning</NavLink>
           </button>
         </div>
         <div className="banner-image flex-1">
