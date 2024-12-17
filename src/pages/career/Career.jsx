@@ -30,7 +30,6 @@ const Career = () => {
               ? "We're Currently Accepting Applications!"
               : "We're Closed for Now, But Check Back Soon!"}
           </p>
-
           {isHiring && (
             <p className="mt-2 text-lg">
               If you're looking for an internship or a job, apply below!
