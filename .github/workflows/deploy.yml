@@ -29,8 +29,8 @@ jobs:
       - name: Deploy to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          ftp-server: ftp://gracelearninghub.com
-          ftp-username: ${{ secrets.CPANEL_FTP_USER }}
-          ftp-password: ${{ secrets.CPANEL_FTP_PASS }}
+          server: ftp://gracelearninghub.com
+          username: ${{ secrets.CPANEL_FTP_USER }}
+          password: ${{ secrets.CPANEL_FTP_PASS }}
           local-dir: ./build/
           remote-dir: /public_html/
