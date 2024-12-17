@@ -26,7 +26,7 @@ jobs:
           npm run build
       - name: Verify build directory exists
         run: |
-          ls -la ./build         
+          ls -la ./dist         
 
       # Step 4: Upload files to cPanel via FTP (using cPanel's FTP/SFTP credentials)
       - name: Deploy to cPanel via FTP
