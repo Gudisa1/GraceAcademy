@@ -37,3 +37,5 @@ jobs:
           password: ${{ secrets.CPANEL_FTP_PASS }}
           local-dir: ./dist/
           remote-dir: /public_html/
+          port: 21 
+          protocol: ftp
