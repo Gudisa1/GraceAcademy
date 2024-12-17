@@ -35,5 +35,5 @@ jobs:
           server: ftp://gracelearninghub.com
           username: ${{ secrets.CPANEL_FTP_USER }}
           password: ${{ secrets.CPANEL_FTP_PASS }}
-          local-dir: ./build/
+          local-dir: ./dist/
           remote-dir: /public_html/
