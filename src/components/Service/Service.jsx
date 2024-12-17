@@ -3,7 +3,7 @@ import React from "react";
 const Service = () => {
   return (
     <div className="mt-16 mb-10 font-mono">
-      <h1 className="text-center text-4xl sm:text-5xl lg:text-4xl font-semibold text-blue-600 mt-16">
+      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-blue-600 mt-12 sm:mt-16">
         Transform Your Skills with
       </h1>
 

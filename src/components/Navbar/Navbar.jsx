@@ -15,16 +15,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      {/* <li>
-        <button className="link" onClick={() => onMenuItemClick("courses")}>
-          Courses
-        </button>
-      </li>
-      <li>
-        <NavLink className="link" onClick={() => onMenuItemClick("faq")}>
-          FAQ
-        </NavLink>
-      </li> */}
+
       <li>
         <NavLink
           className={({ isActive }) => (isActive ? "active-link" : "link")}
@@ -94,7 +85,7 @@ const Navbar = () => {
           {isDropdownOpen && (
             <ul
               tabIndex="0"
-              className="menu menu-compact absolute top-full right-0 mt-3 p-3 shadow-xl bg-[#2D3748] text-white rounded-lg w-52 z-10 transition-transform duration-200 ease-in-out transform hover:scale-105"
+              className="menu menu-compact absolute top-full right-0 mt-3 p-2 flex gap-3 flex-col shadow-xl bg-[#2D3748] text-white rounded-lg w-52 z-10 transition-transform duration-200 ease-in-out transform hover:scale-105"
             >
               {menuItems}
             </ul>

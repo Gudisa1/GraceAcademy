@@ -12,10 +12,11 @@ const Career = () => {
   return (
     <div className="career-container bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 text-white min-h-screen flex items-center justify-center">
       <div className="career-content text-center px-6 md:px-12 py-20">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
           Join Our Amazing Team!
         </h1>
-        <p className="text-xl mb-6">
+
+        <p className="text-base sm:text-lg md:text-xl mb-6">
           At <span className="font-bold">GraceAcademy</span>, we believe in
           creating opportunities for talented individuals to grow and excel.
           Whether you're an intern or a seasoned professional, we value passion,
@@ -24,11 +25,12 @@ const Career = () => {
 
         {/* Status Message */}
         <div className="status-message bg-[#2D3748] rounded-lg py-4 px-6 mb-8 inline-block">
-          <p className="text-2xl font-semibold">
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold">
             {isHiring
               ? "We're Currently Accepting Applications!"
               : "We're Closed for Now, But Check Back Soon!"}
           </p>
+
           {isHiring && (
             <p className="mt-2 text-lg">
               If you're looking for an internship or a job, apply below!

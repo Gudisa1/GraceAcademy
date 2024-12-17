@@ -56,9 +56,9 @@ const Footer = () => {
             >
               <FaYoutube className="text-2xl" />
             </a>
-            <p>+251968331095</p>
-            <p>graceacademyeth@gmail.com</p>
           </div>
+          <p>+251968331095</p>
+          <p>graceacademyeth@gmail.com</p>
         </div>
       </div>
 
