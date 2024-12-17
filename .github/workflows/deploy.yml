@@ -27,7 +27,7 @@ jobs:
 
       # Step 4: Upload files to cPanel via FTP (using cPanel's FTP/SFTP credentials)
       - name: Deploy to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           ftp-server: ftp://yourdomain.com
           ftp-username: ${{ secrets.CPANEL_FTP_USER }}
