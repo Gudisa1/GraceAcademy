@@ -43,9 +43,8 @@ const Course = () => {
             />
           </figure>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700">
-            Explore the basics of web design, including layout, typography, and
-            user experience (UX). Learn how to create visually appealing
-            websites.
+            Turn your creative ideas into reality! Learn the art and science of
+            web design, from layout to interactivity, with expert mentorship.
           </p>
           <button className="mt-4 px-6 py-2 bg-indigo-500 text-xs sm:text-sm md:text-base lg:text-lg text-white rounded-lg hover:bg-indigo-600 transition-colors">
             <NavLink to="/enroll">Enroll Now</NavLink>

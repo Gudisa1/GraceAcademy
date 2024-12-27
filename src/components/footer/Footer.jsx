@@ -58,6 +58,7 @@ const Footer = () => {
             </a>
           </div>
           <p>+251968331095</p>
+          <p>+251992046832</p>
           <p>graceacademyeth@gmail.com</p>
         </div>
       </div>

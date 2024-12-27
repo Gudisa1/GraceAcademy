@@ -34,7 +34,7 @@ const Faq = () => {
     {
       question: "How can I contact support?",
       answer:
-        "You can contact our support team through the 'Contact Us' section on our website or via email at support@graceacademy.com.",
+        "You can contact our support team through the 'Contact Us' section on our website or via email at graceacademyeth@gmail.com.",
     },
     {
       question: "How can I get a discount?",
