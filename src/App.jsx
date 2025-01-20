@@ -7,6 +7,7 @@ import Home from './pages/home/Home';
 import Footer from './components/footer/Footer';
 import Courses from './pages/Courses/Courses';
 import {PageLayout} from './pages/Courses/Linux';
+import About from './pages/about/About';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/enroll" element={<Enroll />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/about" element={<About />} />
+
         <Route path="/courses/linux/*" element={<PageLayout />} />
       </Routes>
       <Footer />

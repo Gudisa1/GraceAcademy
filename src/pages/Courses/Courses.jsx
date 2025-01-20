@@ -33,7 +33,7 @@ const coursesData = [
   //   },
   {
     id: 5,
-    title: 'Linux Administration',
+    title: 'Linux Basic',
     image: '../../images/linux.gif', // Replace with actual GIF path
     description:
       'Gain hands-on experience with Linux operating systems, including shell commands, user management, and system configuration.',

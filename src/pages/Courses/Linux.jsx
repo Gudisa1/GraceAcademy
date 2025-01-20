@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import {NavLink, Route, Routes} from 'react-router-dom';
+import {NavLink, Route, Routes, useLocation} from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
 // Sidebar Component
 const Sidebar = () => {
   return (
-    <div className="w-64 h-full bg-indigo-500 text-white p-6">
+    <div className="w-64 h-full bg-indigo-500 sticky top-20 text-white p-6">
       <h2 className="text-2xl font-bold mb-6">Linux Mastery</h2>
       <ul className="space-y-4">
         <li>
@@ -88,6 +88,12 @@ const Sidebar = () => {
 // Page to fetch and display content in Markdown
 const MarkdownPage = ({fileName}) => {
   const [content, setContent] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top whenever the location changes
+    window.scrollTo(0, 0);
+  }, [location]);
 
   useEffect(() => {
     const fetchMarkdownContent = async () => {

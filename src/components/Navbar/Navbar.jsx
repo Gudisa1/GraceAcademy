@@ -1,35 +1,58 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./Navbar.css";
+import React, {useState} from 'react';
+import {NavLink} from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+  const handleNavClick = () => {
+    window.scrollTo(0, 0); // Scrolls the page to the top
+    setIsDropdownOpen(false); // Closes the dropdown (for small screens)
+  };
   const menuItems = (
     <>
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          className={({isActive}) => (isActive ? 'active-link' : 'link')}
           to="/"
+          onClick={handleNavClick}
         >
           Home
         </NavLink>
       </li>
-
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          className={({isActive}) => (isActive ? 'active-link' : 'link')}
           to="/Career"
+          onClick={handleNavClick}
         >
           Career
         </NavLink>
       </li>
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          className={({isActive}) => (isActive ? 'active-link' : 'link')}
           to="/enroll"
+          onClick={handleNavClick}
         >
           Enroll
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({isActive}) => (isActive ? 'active-link' : 'link')}
+          to="/courses"
+          onClick={handleNavClick}
+        >
+          Free Courses
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({isActive}) => (isActive ? 'active-link' : 'link')}
+          to="/about"
+          onClick={handleNavClick}
+        >
+          About Us
         </NavLink>
       </li>
     </>
@@ -76,8 +99,8 @@ const Navbar = () => {
                 strokeWidth="2"
                 d={
                   isDropdownOpen
-                    ? "M6 18L18 6M6 6l12 12" // "X" Icon
-                    : "M4 6h16M4 12h8m-8 6h16" // Hamburger Icon
+                    ? 'M6 18L18 6M6 6l12 12' // "X" Icon
+                    : 'M4 6h16M4 12h8m-8 6h16' // Hamburger Icon
                 }
               />
             </svg>
