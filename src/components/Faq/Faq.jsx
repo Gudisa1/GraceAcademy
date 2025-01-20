@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 const Faq = () => {
+  // State to track which FAQ is expanded
   const [expanded, setExpanded] = useState(null);
 
   // Function to handle toggle of an FAQ item
